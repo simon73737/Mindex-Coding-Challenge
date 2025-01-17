@@ -1,14 +1,23 @@
 package com.mindex.challenge.data;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import com.mindex.challenge.data.Compensation;
+
 import java.util.List;
 
 public class Employee {
+    @Id
     private String employeeId;
+
     private String firstName;
     private String lastName;
     private String position;
     private String department;
     private List<Employee> directReports;
+
+    // New field to store compensation data
+    private Compensation compensation;
 
     public Employee() {
     }
@@ -59,5 +68,15 @@ public class Employee {
 
     public void setDirectReports(List<Employee> directReports) {
         this.directReports = directReports;
+    }
+
+    // Get the compensation
+    public Compensation getCompensation() {
+        return compensation;
+    }
+
+    // Set the compensation
+    public void setCompensation(Compensation compensation) {
+        this.compensation = compensation;
     }
 }
