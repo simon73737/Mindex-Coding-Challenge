@@ -1,4 +1,10 @@
 # Coding Challenge
+## Solution Overview
+* Created a new endpoint: GET /employee/{employeeId}/reportingStructure which returns the number of employees directly reporting to the employee with the given ID
+* Created three new compensation related endpoints
+*    POST /employee/{employeeId}/compensation which takes three path parameters (salary, effectiveDate, and paymentStructure) and adds a new compensation object to the given employee
+*    PUT /employee/{employeeId}/compensation which also takes three path parameters (salary, effectiveDate, and paymentStructure) and updates or adds the compensation object for the given employee
+*    GET /employee/{employeeId}/compensation which returns the compensation data for an employee with the given ID
 ## What's Provided
 A simple [Spring Boot](https://projects.spring.io/spring-boot/) web application has been created and bootstrapped with data. The application contains 
 information about all employees at a company. On application start-up, an in-memory Mongo database is bootstrapped with 
