@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mindex.challenge.service.impl.EmployeeServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-01-20T18:53:41" hostname="DESKTOP-EBSQJV1" time="0.027">
+  <properties/>
+  <testcase name="testCreateReadUpdate" classname="com.mindex.challenge.service.impl.EmployeeServiceImplTest" time="0.027"/>
+  <system-out><![CDATA[2025-01-20T13:53:41.245-05:00  INFO 16444 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.mindex.challenge.service.impl.EmployeeServiceImplTest]: EmployeeServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-20T13:53:41.246-05:00  INFO 16444 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.mindex.challenge.ChallengeApplication for test class com.mindex.challenge.service.impl.EmployeeServiceImplTest
+2025-01-20T13:53:41.262-05:00 DEBUG 16444 --- [o-auto-1-exec-3] c.m.c.controller.EmployeeController      : Received employee create request for [com.mindex.challenge.data.Employee@7de26b13]
+2025-01-20T13:53:41.262-05:00 DEBUG 16444 --- [o-auto-1-exec-3] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [com.mindex.challenge.data.Employee@7de26b13]
+2025-01-20T13:53:41.267-05:00 DEBUG 16444 --- [o-auto-1-exec-4] c.m.c.controller.EmployeeController      : Received employee create request for id [33aad26c-0bef-4805-a948-b3a5347ca4ac]
+2025-01-20T13:53:41.267-05:00 DEBUG 16444 --- [o-auto-1-exec-4] c.m.c.service.impl.EmployeeServiceImpl   : Getting information for employee with employeeId [33aad26c-0bef-4805-a948-b3a5347ca4ac]
+2025-01-20T13:53:41.270-05:00 DEBUG 16444 --- [o-auto-1-exec-5] c.m.c.controller.EmployeeController      : Received employee create request for id [33aad26c-0bef-4805-a948-b3a5347ca4ac] and employee [com.mindex.challenge.data.Employee@69136b4]
+2025-01-20T13:53:41.270-05:00 DEBUG 16444 --- [o-auto-1-exec-5] c.m.c.service.impl.EmployeeServiceImpl   : Updating employee [33aad26c-0bef-4805-a948-b3a5347ca4ac]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

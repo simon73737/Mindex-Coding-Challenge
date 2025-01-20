@@ -6,6 +6,8 @@ public class Compensation {
     private String effectiveDate;
     private String paymentStructure;
 
+    public Compensation() {
+    }
     // Constructor
     public Compensation (String employeeId, double salary, String effectiveDate, String paymentStructure) {
         this.employeeId = employeeId;
@@ -30,7 +32,7 @@ public class Compensation {
     }
 
     // Set the salary
-    public void setSalary(int salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
